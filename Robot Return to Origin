@@ -1,0 +1,13 @@
+class Solution(object):
+    def judgeCircle(self, moves):
+        """
+        :type moves: str
+        :rtype: bool
+        """
+        d={}
+        for i in "UDLR":
+         d[i] = 0
+            
+        for i in moves:
+            d[i] +=1
+        return d["U"] == d['D'] and d['R'] == d["L"]
