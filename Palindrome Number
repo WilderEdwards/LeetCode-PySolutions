@@ -1,0 +1,10 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        forwards = list(str(x))
+        backwards = forwards[::-1]
+         
+
+        if forwards == backwards:
+            return True 
+        else:
+            return False
